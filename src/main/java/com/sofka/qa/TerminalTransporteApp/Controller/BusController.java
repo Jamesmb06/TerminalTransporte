@@ -19,13 +19,13 @@ public class BusController {
     @PostMapping
     public ResponseEntity<Bus> registrarBus(@RequestBody Bus bus) {
         Bus busRegistrado = busService.registrarBus(bus);
-        return new ResponseEntity<Bus>(busRegistrado, HttpStatus.CREATED);
+        return new ResponseEntity<>(busRegistrado, HttpStatus.CREATED);
     }
 
     @GetMapping
     public ResponseEntity<List<Bus>> obtenerBuses() {
         List<Bus> buses = busService.obtenerBuses();
-        return new ResponseEntity<List<Bus>>(buses, HttpStatus.OK);
+        return new ResponseEntity<>(buses, HttpStatus.OK);
     }
 }
 

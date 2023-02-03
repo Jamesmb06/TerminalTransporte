@@ -2,7 +2,7 @@ package com.sofka.qa.TerminalTransporteApp.Models;
 
 import java.util.List;
 
-public class Viaje {
+public class Viaje extends Pasajero{
 
     private Long id;
     private Bus bus;

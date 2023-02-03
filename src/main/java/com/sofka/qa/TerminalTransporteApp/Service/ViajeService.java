@@ -14,11 +14,13 @@ public class ViajeService {
         viajes.add(viaje);
         return viaje;
     }
-
     public List<Viaje> listarViajes() {
         return viajes;
     }
 
+    public ViajeService() {
+        this.viajes = new ArrayList<>();
+    }
     public List<Viaje> obtenerViajes() {
         return viajes;
     }

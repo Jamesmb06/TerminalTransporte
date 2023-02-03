@@ -19,13 +19,13 @@ public class ViajeController {
     @PostMapping
     public ResponseEntity<Viaje> registrarViaje(@RequestBody Viaje viaje) {
         Viaje viajeRegistrado = viajeService.registrarViaje(viaje);
-        return new ResponseEntity<Viaje>(viajeRegistrado, HttpStatus.CREATED);
+        return new ResponseEntity<>(viajeRegistrado, HttpStatus.CREATED);
     }
 
     @GetMapping
     public ResponseEntity<List<Viaje>> obtenerViajes() {
         List<Viaje> viajes = viajeService.obtenerViajes();
-        return new ResponseEntity<List<Viaje>>(viajes, HttpStatus.OK);
+        return new ResponseEntity<>(viajes, HttpStatus.OK);
     }
 }
 

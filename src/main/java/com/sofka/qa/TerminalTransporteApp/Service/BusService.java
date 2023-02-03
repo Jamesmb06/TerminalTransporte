@@ -8,12 +8,14 @@ import java.util.List;
 
 @Service
 public class BusService {
-    private List<Bus> buses = new ArrayList<>();
+
+    private final List<Bus> buses = new ArrayList<>();
 
     public Bus registrarBus(Bus bus) {
         buses.add(bus);
         return bus;
     }
+
     public List<Bus> listarBuses() {
         return buses;
     }
@@ -49,4 +51,9 @@ public class BusService {
         return buses;
     }
 }
+
+
+
+
+
 

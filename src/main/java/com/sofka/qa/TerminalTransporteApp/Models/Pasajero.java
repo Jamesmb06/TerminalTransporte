@@ -1,6 +1,6 @@
 package com.sofka.qa.TerminalTransporteApp.Models;
 
-public class Pasajero {
+public abstract class Pasajero {
 
     private Long id;
     private String nombre;
