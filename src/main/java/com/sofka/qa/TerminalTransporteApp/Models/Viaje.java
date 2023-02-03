@@ -1,20 +1,47 @@
 package com.sofka.qa.TerminalTransporteApp.Models;
 
-import java.util.List;
-
 public class Viaje extends Pasajero{
 
-    private Long id;
-    private Bus bus;
-    private Destino destino;
-    private List<Pasajero> pasajeros;
+    private Integer id;
 
-    public Long getId() {
+    private String nombre;
+    private String apellido;
+
+    private Bus bus;
+
+    private Destino destino;
+
+    private Integer pasajeros;
+
+    //Getters y setters
+
+    @Override
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
+    }
+
+    @Override
+    public String getNombre() {
+        return nombre;
+    }
+
+    @Override
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    @Override
+    public String getApellido() {
+        return apellido;
+    }
+
+    @Override
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
     }
 
     public Bus getBus() {
@@ -33,12 +60,11 @@ public class Viaje extends Pasajero{
         this.destino = destino;
     }
 
-    public List<Pasajero> getPasajeros() {
+    public Integer getPasajeros() {
         return pasajeros;
     }
 
-    public void setPasajeros(List<Pasajero> pasajeros) {
+    public void setPasajeros(Integer pasajeros) {
         this.pasajeros = pasajeros;
     }
 }
-

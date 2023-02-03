@@ -22,6 +22,7 @@ public class ViajeController {
         return new ResponseEntity<>(viajeRegistrado, HttpStatus.CREATED);
     }
 
+
     @GetMapping
     public ResponseEntity<List<Viaje>> obtenerViajes() {
         List<Viaje> viajes = viajeService.obtenerViajes();
